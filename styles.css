@@ -1,0 +1,75 @@
+/* CSS Document */
+:root{
+    --green: rgb(21, 65,108);
+}
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-inline: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem 5rem;
+    width: 100%;
+    height: 50px;
+}
+header .logo{
+    color: var(--green);
+    font-size: 3rem;
+}
+header .navbar{
+    margin-right: 30px;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #666;
+    text-decoration: none;
+    color: rgb(21, 65,108);
+    margin-right: 40px;
+}
+header .navbar ul li a:hover{
+    color: var(--green);
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(butterfly-3840x2160-books-magic-art-8233.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home .content{
+    text-align: center;
+    padding: 1rem;
+}
+.home .content h1{
+    font-size: 7rem;
+    color: #f9f9f9;
+}
+.home .content p{
+    font-size: 1.9rem;
+    color: #ccc;
+    padding: 1rem 0;
+    width: 70rem;
+}

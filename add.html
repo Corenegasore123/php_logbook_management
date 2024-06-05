@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        nav {
+        background-color: rgb(21, 65,108);
+        padding: 0px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: rgb(21,65,108);
+            color: yellowgreen;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(21,65,108);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p style = "color: white; font-size: 30px; font-weight: bold">
+                <span style = "color: white">LOG</span><span style = "color: yellowgreen">BOOK</span>
+            </p>
+            <div style = "display: flex; gap:50px; margin-right: 100px">
+                <p><a href="in and register.php" style = "text-decoration: none; color: white;">Home</a></p>
+                <p><a href="view.php" style = "text-decoration: none; color: white;">View LogBooks</a></p>
+                <p><a href="add.html" style = "text-decoration: none; color: white;">Add New LogBook</a></p>
+                <p><a href="logout.php" style = "text-decoration: none; color: white;">Logout</a></p>
+            </div>
+    </nav>
+
+    <h1 style="color: yellowgreen;">Add Data</h1>
+
+    <form action="add.php" method="post" name="form1">
+        <table>
+            <tr>
+                <td><label for="entry_date">Entry date</label></td>
+                <td><input type="date" id="entry_date" name="entry_date"></td>
+            </tr>
+            <tr>
+                <td><label for="entry_time">End time</label></td>
+                <td><input type="date" id="entry_time" name="entry_time"></td>
+            </tr>
+            <tr>
+                <td><label for="day">Day</label></td>
+                <td><input type="text" id="day" name="day"></td>
+            </tr>
+            <tr>
+                <td><label for="week">Week</label></td>
+                <td><input type="text" id="week" name="week"></td>
+            </tr>
+            <tr>
+                <td><label for="activity_desc">Activity Description</label></td>
+                <td><input type="text" id="activity_desc" name="activity_desc"></td>
+            </tr>
+            <tr>
+                <td><label for="working_hour">Working hour</label></td>
+                <td><input type="text" id="working_hour" name="working_hour"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Submit" value="Add"></td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+
+</html>
